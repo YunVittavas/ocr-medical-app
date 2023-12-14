@@ -1,0 +1,90 @@
+{
+  "template_name": "OCT_Thickness",
+  "image_file_name": null,
+  "region_1": {
+    "title": "Volume",
+    "key_values": {
+      "Total Volume": [
+        [ 664, 315 ],
+        [ 694, 330 ]
+      ],
+      "Center Volume": [
+        [ 751, 402 ],
+        [ 782, 416 ]
+      ],
+      "Outter Volume 1": [
+        [ 754, 320 ],
+        [ 782, 334 ]
+      ],
+      "Inner Volume 1": [
+        [ 751, 355 ],
+        [ 781, 371 ]
+      ],
+      "Outter Volume 2": [
+        [ 834, 401 ],
+        [ 863, 416 ]
+      ],
+      "Inner Volume 2": [
+        [ 799, 402 ],
+        [ 826, 415 ]
+      ],
+      "Outter Volume 3": [
+        [ 754, 482 ],
+        [ 781, 496 ]
+      ],
+      "Inner Volume 3": [
+        [ 754, 447 ],
+        [ 781, 460 ]
+      ],
+      "Outter Volume 4": [
+        [ 672, 402 ],
+        [ 702, 418 ]
+      ],
+      "Inner Volume 4": [
+        [ 707, 402 ],
+        [ 736, 416 ]
+      ]
+    }
+  },
+  "region_2": {
+    "title": "Thickness",
+    "key_values": {
+      "Center Thickness": [
+        [ 753, 388 ],
+        [ 781, 401 ]
+      ],
+      "Outter Thickness 1": [
+        [ 755, 308 ],
+        [ 782, 320 ]
+      ],
+      "Inner Thickness 1": [
+        [ 755, 342 ],
+        [ 779, 357 ]
+      ],
+      "Outter Thickness 2": [
+        [ 835, 387 ],
+        [ 861, 401 ]
+      ],
+      "Inner Thickness 2": [
+        [ 799, 388 ],
+        [ 826, 401 ]
+      ],
+      "Outter Thickness 3": [
+        [ 755, 468 ],
+        [ 781, 482 ]
+      ],
+      "Inner Thickness 3": [
+        [ 755, 432 ],
+        [ 780, 448 ]
+      ],
+      "Outter Thickness 4": [
+        [ 673, 387 ],
+        [ 699, 401 ]
+      ],
+      "Inner Thickness 4": [
+        [ 708, 388 ],
+        [ 735, 402 ]
+      ]
+    }
+  }
+}

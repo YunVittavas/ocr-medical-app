@@ -1,0 +1,279 @@
+{
+  "template_name": "OCTA_Density",
+  "image_file_name": null,
+  "region_1": {
+    "title": "Whole Image",
+    "key_values": {
+      "Density (%)": [
+        [ 971, 83 ],
+        [ 1005, 97 ]
+      ],
+      "Thickness (mm)": [
+        [ 1147, 82 ],
+        [ 1175, 97 ]
+      ]
+    }
+  },
+  "region_2": {
+    "title": "Seperior-Hemi",
+    "key_values": {
+      "Density (%)": [
+        [ 972, 101 ],
+        [ 1006, 113 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 101 ],
+        [ 1177, 114 ]
+      ]
+    }
+  },
+  "region_3": {
+    "title": "Inferior-Hemi",
+    "key_values": {
+      "Density (%)": [
+        [ 972, 116 ],
+        [ 1005, 130 ]
+      ],
+      "Thickness (mm)": [
+        [ 1148, 115 ],
+        [ 1177, 130 ]
+      ]
+    }
+  },
+  "region_4": {
+    "title": "Fovea",
+    "key_values": {
+      "Density (%)": [
+        [ 972, 132 ],
+        [ 1004, 146 ]
+      ],
+      "Thickness (mm)": [
+        [ 1148, 132 ],
+        [ 1178, 147 ]
+      ]
+    }
+  },
+  "region_5": {
+    "title": "ParaFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 973, 150 ],
+        [ 1003, 163 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 149 ],
+        [ 1176, 163 ]
+      ]
+    }
+  },
+  "region_6": {
+    "title": "Superior-Hemi ParaFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 972, 165 ],
+        [ 1003, 180 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 166 ],
+        [ 1175, 180 ]
+      ]
+    }
+  },
+  "region_7": {
+    "title": "Inferior-Hemi ParaFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 973, 182 ],
+        [ 1002, 196 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 182 ],
+        [ 1175, 197 ]
+      ]
+    }
+  },
+  "region_8": {
+    "title": "Tempo ParaFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 973, 199 ],
+        [ 1002, 213 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 198 ],
+        [ 1175, 214 ]
+      ]
+    }
+  },
+  "region_9": {
+    "title": "Superior ParaFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 973, 214 ],
+        [ 1001, 229 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 215 ],
+        [ 1174, 230 ]
+      ]
+    }
+  },
+  "region_10": {
+    "title": "Nasal ParaFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 973, 232 ],
+        [ 1002, 247 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 233 ],
+        [ 1175, 246 ]
+      ]
+    }
+  },
+  "region_11": {
+    "title": "Inferior ParaFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 974, 249 ],
+        [ 1001, 263 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 249 ],
+        [ 1175, 263 ]
+      ]
+    }
+  },
+  "region_12": {
+    "title": "PeriFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 973, 265 ],
+        [ 1003, 281 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 266 ],
+        [ 1174, 280 ]
+      ]
+    }
+  },
+  "region_13": {
+    "title": "Superferior-Hemi PeriFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 974, 284 ],
+        [ 1002, 297 ]
+      ],
+      "Thickness (mm)": [
+        [ 1150, 281 ],
+        [ 1176, 297 ]
+      ]
+    }
+  },
+  "region_14": {
+    "title": "Inferior-Hemi PeriFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 974, 299 ],
+        [ 1002, 314 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 298 ],
+        [ 1175, 313 ]
+      ]
+    }
+  },
+  "region_15": {
+    "title": "Tempo PeriFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 973, 316 ],
+        [ 1002, 330 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 315 ],
+        [ 1174, 330 ]
+      ]
+    }
+  },
+  "region_16": {
+    "title": "Superior PeriFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 972, 332 ],
+        [ 1003, 348 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 331 ],
+        [ 1175, 346 ]
+      ]
+    }
+  },
+  "region_17": {
+    "title": "Nasal PeriFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 972, 350 ],
+        [ 1002, 364 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 348 ],
+        [ 1175, 363 ]
+      ]
+    }
+  },
+  "region_18": {
+    "title": "Inferior PeriFovea",
+    "key_values": {
+      "Density (%)": [
+        [ 972, 365 ],
+        [ 1002, 380 ]
+      ],
+      "Thickness (mm)": [
+        [ 1149, 366 ],
+        [ 1175, 380 ]
+      ]
+    }
+  },
+  "region_19": {
+    "title": "Grid-based Vessel Density (%)",
+    "key_values": {
+      "1": [
+        [ 981, 406 ],
+        [ 1013, 421 ]
+      ],
+      "2": [
+        [ 1060, 407 ],
+        [ 1090, 420 ]
+      ],
+      "3": [
+        [ 1145, 406 ],
+        [ 1172, 419 ]
+      ],
+      "4": [
+        [ 982, 424 ],
+        [ 1013, 436 ]
+      ],
+      "5": [
+        [ 1061, 423 ],
+        [ 1089, 436 ]
+      ],
+      "6": [
+        [ 1146, 424 ],
+        [ 1173, 437 ]
+      ],
+      "7": [
+        [ 983, 441 ],
+        [ 1012, 453 ]
+      ],
+      "8": [
+        [ 1061, 440 ],
+        [ 1090, 454 ]
+      ],
+      "9": [
+        [ 1145, 441 ],
+        [ 1172, 454 ]
+      ]
+    }
+  }
+}
