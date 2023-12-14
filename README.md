@@ -4,6 +4,8 @@
 
 The "OCR for Medical Documents" project is a software application designed to streamline the extraction of text data from medical documents using Optical Character Recognition (OCR) technology. This tool provides a user-friendly interface for template creation and applies OCR to generate CSV reports, facilitating the efficient analysis of medical documents.
 
+This project is a part of the class project for EGBI443 Image Processing at Mahidol University.
+
 ## <ins>Features</ins>
 
 - Template Creation: Easily create templates for different types of medical documents to enhance OCR accuracy.
@@ -23,13 +25,13 @@ The "OCR for Medical Documents" project is a software application designed to st
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/YunVittavas/ocr-medical-app.git
+    git clone https://github.com/EnigMa-Sean/ocr-medical-app.git
     ```
 
 2. Navigate to the project directory:
     
     ```bash
-    cd OCR-for-Medicine
+    cd ocr-medical-app
     ```
 
 3. Install the required packages:
@@ -59,8 +61,7 @@ See the [LICENSE](LICENSE) file for details.
 ## <ins>Acknowledgments</ins>
 
 - The project uses advanced OCR technology from Tessaract OCR. The project has benefited from their valuable work.
-- Special thanks to [Tonumoy Mukherjee](https://github.com/Tonumoy) for providing code contributions under the [MIT License](https://opensource.org/licenses/MIT). The project has   
-benefited from their valuable work. You can find their original code [here](https://github.com/Tonumoy/OCR-on-Image-ROI-with-Tesseract).
+- Special thanks to [Tonumoy Mukherjee](https://github.com/Tonumoy) for providing code contributions under the [MIT License](https://opensource.org/licenses/MIT). The project has benefited from their valuable work. You can find their original code [here](https://github.com/Tonumoy/OCR-on-Image-ROI-with-Tesseract).
 - Appreciation to all contributors and supporters of the project.
 
 ## <ins>Contact</ins>
