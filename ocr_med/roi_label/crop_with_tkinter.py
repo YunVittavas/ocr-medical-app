@@ -90,6 +90,7 @@ class ImageCropper:
     def show_error_message():
         messagebox.showerror("Error", "The title already exists. Please enter a new title.")
 
+    # functiom to show state changes
     def change_state(self, new_state):
         self.buttonState = new_state
         if new_state == 1:
@@ -103,6 +104,7 @@ class ImageCropper:
         else:
             self.show_success("Press Botton for Label")
 
+    # save template into JSON file
     def save_template_json(self):
         print(self.file_functions.base_dict)
         self.file_functions.save_template_json()
@@ -148,20 +150,9 @@ class ImageCropper:
     def reset_get_value_ocr_flag(self):
         self.get_value_ocr = False
 
-    def shape_selection(self, event, x, y, flags, param): 
-        # Storing the (x1,y1) coordinates when left mouse button is pressed  
-        if event == cv2.EVENT_LBUTTONDOWN: 
-            self.roi_coordinates = [(x, y)] 
-    
-        # Storing the (x2,y2) coordinates when the left mouse button is released and make a rectangle on the selected region
-        elif event == cv2.EVENT_LBUTTONUP: 
-            self.roi_coordinates.append((x, y)) 
-    
-            # Drawing a rectangle around the region of interest (roi)
-            cv2.rectangle(image, self.roi_coordinates[0], self.roi_coordinates[1], (0,255,255), 2) 
-            cv2.imshow("Imported Image", image) 
-
+    # Zoom and scroll fucntion for cropping
     def scroll_zoom(self, event, x, y, flags, param):
+        # Zoom in/out on mouse wheel scroll
         if event == cv2.EVENT_MOUSEWHEEL:
             if flags > 0:
                 self.zoom *= 1.1
@@ -171,6 +162,7 @@ class ImageCropper:
                 self.zoom = max(self.zoom, self.min_zoom)
             img = self.image.copy()
 
+            # Calculate the new dimensions of the image
             new_width = round(img.shape[1] / self.zoom)
             new_height = round(img.shape[0] / self.zoom)
             self.x_offset = round(x - (x / self.zoom))
@@ -180,6 +172,7 @@ class ImageCropper:
                 self.x_offset : self.x_offset + new_width,]
             self.new_image = cv2.resize(img, (self.image.shape[1], self.image.shape[0]))
 
+        # Storing the (x1,y1) coordinates when the left mouse button is pressed and make a rectangle on the selected region
         if event == cv2.EVENT_LBUTTONDOWN: 
             self.plot_roi_coordinates = [(x, y)]
             if self.zoom > 1:
@@ -201,9 +194,6 @@ class ImageCropper:
                 origin_x = x
                 origin_y = y
             self.roi_coordinates.append((origin_x, origin_y)) 
-    
-            # Drawing a rectangle around the region of interest (roi)
-            # print(self.roi_coordinates)
 
             cv2.rectangle(self.new_image, self.plot_roi_coordinates[0], self.plot_roi_coordinates[1], (0,255,255), 2) 
             cv2.imshow("Imported Image", self.new_image) 
@@ -240,15 +230,18 @@ class ImageCropper:
             
             if key == ord("c"): # Clear the selection when 'c' is pressed 
                 self.new_image = image_copy.copy() 
-                
+
+    # Main function for the GUI     
     def main(self):
         while True:
             try:
                 if self.get_value_text_flag:
+                    # Add template name
                     if self.get_button_state == 1:
                         self.file_functions.add_template_name(self.get_input_text.get())
                         self.show_success("Add template name by typing")
                         print(self.file_functions.base_dict)
+                    # Add title
                     elif self.get_button_state == 2:
                         if not self.previous_value_exist:
                             self.show_error("Please add a value in previous key first")
@@ -259,7 +252,7 @@ class ImageCropper:
                             self.file_functions.add_title(self.get_input_text.get())
                             print(self.file_functions.base_dict)
                             self.show_success("Successfully add title by typing")
-                           
+                    # Add key   
                     elif self.get_button_state == 3:
                         if not self.title_exist:
                             self.show_error("Please add a title before adding a header")
@@ -272,6 +265,7 @@ class ImageCropper:
                             self.file_functions.add_key(self.get_input_text.get())
                             self.show_success("Successfully add key by typing")
                             print(self.file_functions.base_dict)
+                    # Add value
                     elif self.get_button_state == 4:
                         self.show_error("Please crop from the image to get the value")
                     else:   
@@ -280,12 +274,15 @@ class ImageCropper:
 
 
                 elif self.get_value_ocr_flag:
+                    # Add template name
                     if self.get_button_state == 1:
                         self.show_error("Please identify template name by typing")
                         print(self.file_functions.base_dict)
+                    # Add title
                     elif self.get_button_state == 2:
                         self.show_error("Please identify title name by typing")
                         print(self.file_functions.base_dict)
+                    # Add key
                     elif self.get_button_state == 3:
                         if not self.title_exist:
                             self.show_error("Please add a title before adding a header")
@@ -298,6 +295,7 @@ class ImageCropper:
                             self.file_functions.add_key(self.get_ocr_text)
                             self.show_success("Successfully add key by OCR cropping")
                             print(self.file_functions.base_dict)
+                    # Add value
                     elif self.get_button_state == 4:
                         if self.previous_value_exist:
                             self.show_error("Please add a new key first")
