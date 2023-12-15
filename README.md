@@ -22,25 +22,31 @@ This project is a part of the class project for EGBI443 Image Processing at Mahi
 
 ### Installations
 
-1. Clone the repository:
+1. Navigate to desired directory to store the project (Example: Desktop):
 
     ```bash
-    git clone https://github.com/EnigMa-Sean/ocr-medical-app.git
+    cd Desktop
     ```
 
-2. Navigate to the project directory:
+2. Clone the repository:
+
+    ```bash
+    git clone https://github.com/YunVittavas/ocr-medical-app.git
+    ```
+
+3. Navigate to the project directory:
     
     ```bash
     cd ocr-medical-app
     ```
 
-3. Install the required packages:
+4. Install the required packages:
 
     ```bash
     pip install .
     ```
 
-4. Create a new folder named "reports" and "data" in the project directory.
+5. Create a new folder named "reports" and "data" in the project directory.
 
 ### Usage
 
