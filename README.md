@@ -53,7 +53,7 @@ This project is a part of the class project for EGBI443 Image Processing at Mahi
 1. Run the application:
 
     ```bash
-    python ocr_for_medicine.py
+    python main.py
     ```
 2. Use the intuitive interface to create templates and initiate OCR processing.
 3. The generated CSV reports will be saved in the "reports" folder.
